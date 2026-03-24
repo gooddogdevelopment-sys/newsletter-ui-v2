@@ -52,7 +52,7 @@ export default async function AnalyticsPage() {
       headers: { 'X-ApiKey': apiKey, accept: 'text/plain' },
       cache: 'no-store',
     }),
-    fetch(`${process.env.RENDER_API_URL}/Analytics`, {
+    fetch(`${process.env.RENDER_API_URL}/Analytics/newsletter-counts-by-month`, {
       headers: { 'X-ApiKey': apiKey, accept: 'text/plain' },
       cache: 'no-store',
     }),

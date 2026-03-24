@@ -53,7 +53,7 @@ export default function NewsletterBarChart({ data }: Props) {
             border: '1px solid #e0e0e0',
             fontSize: 13,
           }}
-          formatter={(value: number) => [value, 'Newsletters']}
+          formatter={(value) => [value ?? 0, 'Newsletters']}
         />
         <Bar dataKey="count" fill="#1976d2" radius={[4, 4, 0, 0]} maxBarSize={56} />
       </BarChart>
