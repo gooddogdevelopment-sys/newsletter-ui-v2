@@ -35,8 +35,8 @@ export default async function HomePage() {
 
   return (
     <div className="max-w-3xl mx-auto py-10 px-4">
-      <h1 className="text-3xl font-bold text-gray-900 mb-2">Newsletter Archive</h1>
-      <p className="text-gray-500 mb-8 text-sm">Daily coding newsletters, generated fresh every day.</p>
+      <h1 className="text-3xl font-bold text-gray-500 mb-2">Newsletter Archive</h1>
+      <p className="text-gray-500 mb-8 text-sm">Daily coding newsletters, generated daily.</p>
 
       {newsletters.length === 0 ? (
         <div className="text-center py-20 text-gray-400">
