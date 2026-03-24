@@ -50,7 +50,7 @@ export default function NewsletterCard({ id, title, formattedDate, overview, sub
                   WebkitBoxOrient: 'vertical',
                   overflow: 'hidden',
                 }}>
-                  {overview}
+                  {overview}...
                 </Typography>
               )}
             </div>
