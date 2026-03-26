@@ -5,6 +5,7 @@ import { cookies } from 'next/headers';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v16-appRouter';
 import Header from '@/components/Header';
 import LoginForm from '@/components/LoginForm';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const geist = Geist({
   variable: '--font-geist-sans',
@@ -36,6 +37,7 @@ export default async function RootLayout({
           )}
         </AppRouterCacheProvider>
       </body>
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID!} />
     </html>
   );
 }
